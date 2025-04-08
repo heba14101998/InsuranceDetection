@@ -1,0 +1,8 @@
+2025-04-08 22:53:31,727 - DataFactory - INFO - VehicleAge: [0.5 nan]
+2025-04-08 22:53:31,967 - DataFactory - INFO - Missing Data Imputed
+2025-04-08 22:53:31,968 - DataFactory - INFO - Data shape before removing outliers: (100000, 11)
+2025-04-08 22:53:31,982 - DataFactory - INFO - Data shape after removing outliers: (97314, 11)
+2025-04-08 22:53:32,162 - DataFactory - INFO - Preprocessor fitted
+2025-04-08 22:53:32,328 - DataFactory - INFO - Transformed data shape: (97314, 10)
+2025-04-08 22:53:33,567 - DataFactory - INFO - Transformed data saved to data/processed/transformed_train.csv
+2025-04-08 22:53:33,567 - DataFactory - INFO - Preprocessor saved to checkpoints\preprocessor\preprocessor.pkl

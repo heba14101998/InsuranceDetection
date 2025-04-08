@@ -1,0 +1,24 @@
+# Environment
+.env
+.venv/
+venv/
+.conda/
+.vscode/
+
+
+# Python
+__pycache__/
+*.py[cod]
+
+# MLflow
+mlruns/
+
+# DVC
+.dvc/tmp
+.dvc/cache
+
+# others
+draft/
+# data/
+# checkpoint/
+# logs/

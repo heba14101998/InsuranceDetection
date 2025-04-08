@@ -1,0 +1,41 @@
+paths:
+  model_dir: checkpoints/models
+  raw_data_dir: data/raw
+  processed_data_dir: data/processed
+  artifacts_dir: artifacts/
+  log_dir: logs/
+
+  train_path: data/raw/train.csv
+  test_path: data/raw/test.csv
+  prod_path: data/raw/production.csv
+  transformed_data_path: data/processed/transformed_train.csv
+  preprocessor_path: checkpoints/preprocessor/preprocessor.pkl
+
+data:
+  target_col: Result
+  categorical_cols: 
+    - Gender
+    - HasDrivingLicense
+    - RegionID
+    - Switch
+    - PastAccident
+    - SalesChannelID
+  numercal_cols: 
+    - Age
+    - VehicleAge
+    - AnnualPremium
+    - DaysSinceCreated
+
+model: 
+  name: DescionTreeClassifier
+  params: 
+    criterion: entopy
+    max_length: null
+
+#  name: RandomForestClassifier
+#  params: 
+#    n_estimators: 50
+
+mlflow:
+  experiment_name: Insurance_detection
+  run_name: DescionTree_run
